@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="" name="description">
+	<meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name="author">
+	<meta content="Jekyll v3.8.5" name="generator">
+	<title>Checkout</title><!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+	       .outl{
+	       border-color: white;   
+	       color: white;   
+	       }
+	       .outl:hover {
+	           color: black;
+	           background-color: white;
+	           border-color: white;
+	       }
+	     .bgrclr{
+	       background-color: black;
+	     }
+	     .txt{
+	       color: white;
+	       padding-left: 15px;
+	     }
+	     .txt:hover{
+	       color: gray;
+	       border-color: gray;
+	       text-decoration: none;
+	     }
+	     .txt2{
+	       padding-left: 15px;
+	       color: white;
+	     }
+	     .txt3{
+	       color: black;
+
+	     }
+	     .txt3:hover{
+	       color: gray;
+	       border-color: gray;
+	     }
+	     .rs{
+	       color:#B53415;
+	     }
+	     .heading{
+	       text-align: center;
+	       
+	     }
+	     .btn3{
+	         color: White;
+	         background-color: black;
+
+	     }
+	     .btn3:hover{
+	         color: black;
+	         background-color: white;
+	         border-color: black;
+	     }
+	     
+	</style><!-- Custom styles for this template -->
+</head>
+<body class="bg-light">
+	<!-- Nav Bar -->
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm bgrclr">
+		<img height="30" src="img/logo_black.jpg" width="30">
+		<h5 class="my-0 mr-md-auto font-weight-normal txt2"><b>White Wolf</b></h5>
+		<form class="form-inline my-2 my-lg-0">
+			<input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="text"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+		<nav class="my-2 my-md-0 mr-md-3 txt">
+			<a class="p-2 txt" href="tshirts.html">T-Shirts</a> <a class="p-2 txt" href="clocks.html">Wall-Clocks</a> <a class="p-2 txt" href="keychains.html">Key-chains</a>
+		</nav><a class="btn outl" href="index.html">Sign in</a>
+	</div><!-- Nav Bar End -->
+	<div class="container">
+		<div class="py-5 text-center">
+			<h2>Checkout</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-4 order-md-2 mb-4">
+				<h4 class="d-flex justify-content-between align-items-center mb-3"><span class="text-muted">Your cart</span> <span class="badge badge-secondary badge-pill">3</span></h4>
+				<ul class="list-group mb-3">
+					<li class="list-group-item d-flex justify-content-between lh-condensed">
+						<div>
+							<h6 class="my-0">T-Shirt</h6><small class="text-muted">Fire and Blood</small>
+						</div><span class="text-muted">₹499</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between lh-condensed">
+						<div>
+							<h6 class="my-0">Wall-clock</h6><small class="text-muted">Mother of Dragons</small>
+						</div><span class="text-muted">₹399</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between lh-condensed">
+						<div>
+							<h6 class="my-0">Key-Chain</h6><small class="text-muted">Targaryen Sigil</small>
+						</div><span class="text-muted">₹199</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between bg-light">
+						<div class="text-success">
+							<h6 class="my-0">Promo code</h6><small>GOTS8</small>
+						</div><span class="text-success">-₹200</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between"><span>Total (INR)</span> <strong>₹878</strong></li>
+				</ul>
+				<form class="card p-2">
+					<div class="input-group">
+						<input class="form-control" placeholder="Promo code" type="text">
+						<div class="input-group-append">
+							<button class="btn btn-secondary" type="submit">Redeem</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-8 order-md-1">
+				<h4 class="mb-3">Billing address</h4>
+				<form class="needs-validation" novalidate="">
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<label for="firstName">First name</label> <input class="form-control" id="firstName" placeholder="" required="" type="text" value="">
+							<div class="invalid-feedback">
+								Valid first name is required.
+							</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="lastName">Last name</label> <input class="form-control" id="lastName" placeholder="" required="" type="text" value="">
+							<div class="invalid-feedback">
+								Valid last name is required.
+							</div>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="username">Username</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">@</span>
+							</div><input class="form-control" id="username" placeholder="Username" required="" type="text">
+							<div class="invalid-feedback" style="width: 100%;">
+								Your username is required.
+							</div>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="email">Email <span class="text-muted">(Optional)</span></label> <input class="form-control" id="email" placeholder="you@example.com" type="email">
+						<div class="invalid-feedback">
+							Please enter a valid email address for shipping updates.
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="address">Address</label> <input class="form-control" id="address" placeholder="Street Name" required="" type="text">
+						<div class="invalid-feedback">
+							Please enter your shipping address.
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="address2">Address 2 <span class="text-muted">(Optional)</span></label> <input class="form-control" id="address2" placeholder="Apartment or suite" type="text">
+					</div>
+					<div class="row">
+						<div class="col-md-5 mb-3">
+							<label for="country">Country</label> <select class="custom-select d-block w-100" id="country" required="">
+								<option value="">
+									Choose...
+								</option>
+								<option>
+									India
+								</option>
+							</select>
+							<div class="invalid-feedback">
+								Please select a valid country.
+							</div>
+						</div>
+						<div class="col-md-4 mb-3">
+							<label for="state">State</label> <select class="custom-select d-block w-100" id="state" required="">
+								<option value="">
+									Choose...
+								</option>
+								<option>
+									Andhra Pradesh
+								</option>
+							</select>
+							<div class="invalid-feedback">
+								Please provide a valid state.
+							</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<label for="zip">Zip</label> <input class="form-control" id="zip" placeholder="" required="" type="text">
+							<div class="invalid-feedback">
+								Zip code required.
+							</div>
+						</div>
+					</div>
+					<hr class="mb-4">
+					<div class="custom-control custom-checkbox">
+						<input class="custom-control-input" id="same-address" type="checkbox"> <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+						<input class="custom-control-input" id="save-info" type="checkbox"> <label class="custom-control-label" for="save-info">Save this information for next time</label>
+					</div>
+					<hr class="mb-4">
+					<h4 class="mb-3">Payment</h4>
+					<div class="d-block my-3">
+						<div class="custom-control custom-radio">
+							<input checked class="custom-control-input" id="credit" name="paymentMethod" required="" type="radio"> <label class="custom-control-label" for="credit">Credit card</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input class="custom-control-input" id="debit" name="paymentMethod" required="" type="radio"> <label class="custom-control-label" for="debit">Debit card</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input class="custom-control-input" id="paypal" name="paymentMethod" required="" type="radio"> <label class="custom-control-label" for="paypal">PayPal</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-3">
+							<label for="cc-name">Name on card</label> <input class="form-control" id="cc-name" placeholder="" required="" type="text"> <small class="text-muted">Full name as displayed on card</small>
+							<div class="invalid-feedback">
+								Name on card is required
+							</div>
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="cc-number">Credit card number</label> <input class="form-control" id="cc-number" placeholder="" required="" type="text">
+							<div class="invalid-feedback">
+								Credit card number is required
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 mb-3">
+							<label for="cc-expiration">Expiration</label> <input class="form-control" id="cc-expiration" placeholder="" required="" type="text">
+							<div class="invalid-feedback">
+								Expiration date required
+							</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<label for="cc-cvv">CVV</label> <input class="form-control" id="cc-cvv" placeholder="" required="" type="text">
+							<div class="invalid-feedback">
+								Security code required
+							</div>
+						</div>
+					</div>
+					<hr class="mb-4">
+					<button class="btn btn3 btn-lg btn-block" type="submit">Continue to checkout</button>
+				</form>
+			</div>
+		</div>
+		<footer class="my-5 pt-5 text-muted text-center text-small">
+			<p class="mb-1">&copy; 2017-2019 White Wolf</p>
+			<ul class="list-inline">
+				<li class="list-inline-item">
+					<a href="#">Privacy</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#">Terms</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="#">Support</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
